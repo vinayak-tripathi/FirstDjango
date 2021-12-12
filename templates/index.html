@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}Home
+{% block body %}
+    <h1 class='text-center'>Enter the URL</h1>
+    <div class=container>
+    <form method = 'post' action = ''>
+        {% csrf_token %}
+            <label for="exampleInputEmail1" class="form-label">URL</label>
+            <input type="text" id='name' name='name' class="form-control">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock body %}
